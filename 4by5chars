@@ -6,13 +6,13 @@ char maxlimit[50];
 int charamount = 0;
 /*char ex[number of big elements][number of elements in 1st][number of elements in 2nd]*/
 
-int c[2][3][2] ={
-{0, 0},
-{0, 0},
-{0, 0}},
-{{0, 0},
-{0, 0},
-{0, 0}};
+char c[2][3][2] ={
+{'0', '0'},
+{'0', '0'},
+{'0', '0'}},
+{{'0', '0'},
+{'0', '0'},
+{'0', '0'}};
 void main(){
   /*name the char array */
   for(int i = 0; i < charamount; i++){
