@@ -6,13 +6,7 @@ char maxlimit[50];
 int charamount = 0;
 /*char ex[number of big elements][number of elements in 1st][number of elements in 2nd]*/
 
-char c[2][3][2] ={
-{'0', '0'},
-{'0', '0'},
-{'0', '0'}},
-{{'0', '0'},
-{'0', '0'},
-{'0', '0'}};
+char c[10][5][4];
 void main(){
   /*name the char array */
   for(int i = 0; i < charamount; i++){
@@ -23,6 +17,10 @@ void nameline(){
   /*for every new character, increase charamount by one.*/
 
 }
+void init(){
+  c[1, 2, 3, 4, 5, 6, 7, 8, 9, 10][1, 2][1, 2] = ' ';
 
+
+}
 
 
