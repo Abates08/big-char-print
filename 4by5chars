@@ -2,7 +2,6 @@
 #include <stdio.h>
 int width = 6;
 int height = 5;
-char maxlimit[50];
 int charamount = 0;
 /*char ex[number of big elements][number of elements in 1st][number of elements in 2nd]*/
 char layers[5][64];
@@ -14,7 +13,7 @@ void main(){
   }
 }
 void nameline(){
-  /*for every new character, increase charamount by one.*/
+  /*for every new character, increase charamount by one and convert chars to layers.*/
 
 }
 void init(){
