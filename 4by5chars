@@ -22,7 +22,9 @@ void nameline(){
   /*for every new character, increase charamount by one and convert chars to layers.*/
   charamount = 10;
   for(int i = 0; i < 5; i++){
-    
+    for(int j = 0; j < charamount; j++){
+      
+    }
   }
 }
 void init(){
