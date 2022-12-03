@@ -11,9 +11,9 @@ void main(){
   init();
   nameline();
   /*name the char array */
-    for(int k = 0; k < 5; k++){
+    for(int i = 0; i < 5; i++){
       for(int j = 0; j < 64; j++){
-        printf("%c", layers[k][j]);
+        printf("%c", layers[i][j]);
       }
     printf("\n");
     }
@@ -23,7 +23,12 @@ void nameline(){
   charamount = 10;
   for(int i = 0; i < 5; i++){
     for(int j = 0; j < charamount; j++){
-      
+      for(int k = 0; k < 64; k++){
+        while(layers[i][x] == '/0'){
+          layers[i][x] = c[j][i][k];
+        }
+        x++;
+      }
     }
   }
 }
@@ -61,5 +66,8 @@ void init(){
   c[10][2, 3, 4][1, 4] = '1';
   c[10][1, 5][5] = ' ';
   c[10][2, 3, 4][2, 3] = ' ';
+
+
+  layers[1, 2, 3, 4, 5][31, 32, 33, 34] = ' ';
 
 }
