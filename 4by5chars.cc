@@ -3,6 +3,7 @@ int width = 6;
 int height = 5;
 int x = 0;
 int charamount = 0;
+int firsttimedone = 0;
 /*char ex[number of big elements][number of elements in 1st][number of elements in 2nd]*/
 char layers[5][64];
 char c[10][5][6];
@@ -47,11 +48,20 @@ void nameline(){
   charamount = 10;
   for(int i = 0; i < charamount; i++){
     for(int j = 0; j < 5; j++){
-      for(int k = 0; k < 64; k++){
-        while(layers[i][x] != '\0'){
-          layers[i][x] = c[j][i][k];
-          x++;
+      for(int k = 0; k < 6; k++){
+        if(firsttimedone == 0){
+          while(layers[i][k] != '\0'){
+            layers[i][k] = c[i][j][k];
+            k++;
+          }
+        }else{
+          while(layers[i][k + x] != '\0'){
+            layers[i][k + x] = c[i][j][k];
+            x++;
+          }
+
         }
+        firsttimedone = 1;
         x++;
       }
     }
