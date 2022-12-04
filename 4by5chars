@@ -21,8 +21,15 @@ void main(){
 void nameline(){
   /*for every new character, increase charamount by one and convert chars to layers.*/
   charamount = 10;
-  for(int i = 0; i < 5; i++){
-    
+  for(int j = 0; j < charamount; j++){
+    for(int i = 0; i < 5; i++){
+      for(int k = 0; k < 6; k++){
+        while(layers[i][x] == '/0'){
+          layers[i][x + k] = c[j][i][k];
+        }
+      x++;
+      }
+    }
   }
 }
 void init(){
