@@ -45,8 +45,8 @@ void init(){
   layers[1][1,4,8,9,10,13,19,25,26,27,28,35,38,41,42,43,44,47,48,49,50,53,59,60,61] = '1';
   layers[1][2,3,5,6,7,11,12,14,15,16,17,18,20,21,22,23,24,29,30,31,32,33,34,36,37,39,40,45,46,51,52,54,55,56,57,58,62,63,64] = ' ';
 }
-void nameline(){
-  /*for every new character, increase charamount by one and convert chars to layers.*/
+/*void nameline(){
+  /for every new character, increase charamount by one and convert chars to layers.*
   charamount = 10;
   for(int i = 0; i < charamount; i++){
     for(int j = 0; j < 5; j++){
@@ -68,15 +68,15 @@ void nameline(){
       firsttimedone = 1;
     }
   }
-}
+}*/
 int main(){
   printf("hello world");
    init();
-   nameline();
+   //nameline();
    /*name the char array */
      for(int i = 0; i < 5; i++){
        for(int j = 0; j < 6; j++){
-         printf("%c", c[1][i][j]);
+         printf("%c", layers[i][j]);
        }
      printf("\n");
     }
