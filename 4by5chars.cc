@@ -6,31 +6,6 @@ int charamount = 0;
 /*char ex[number of big elements][number of elements in 1st][number of elements in 2nd]*/
 char layers[5][64];
 char c[10][5][6];
-void main(){
-  init();
-  nameline();
-  /*name the char array */
-    for(int i = 0; i < 5; i++){
-      for(int j = 0; j < 64; j++){
-        printf("%c", layers[i][j]);
-      }
-    printf("\n");
-    }
-  }
-void nameline(){
-  /*for every new character, increase charamount by one and convert chars to layers.*/
-  charamount = 10;
-  for(int i = 0; i < 5; i++){
-    for(int j = 0; j < charamount; j++){
-      for(int k = 0; k < 64; k++){
-        while(layers[i][x] == '/0'){
-          layers[i][x] = c[j][i][k];
-        }
-        x++;
-      }
-    }
-  }
-}
 void init(){
   //small spaces
   c[1, 2, 3, 4, 5, 6, 7, 8, 9, 10][1-5][5, 6] = ' ';
@@ -67,3 +42,31 @@ void init(){
   c[10][2, 3, 4][2, 3] = ' ';
   layers[1, 2, 3, 4, 5][31, 32, 33, 34] = ' ';
 }
+void nameline(){
+  /*for every new character, increase charamount by one and convert chars to layers.*/
+  charamount = 10;
+  for(int i = 0; i < charamount; i++){
+    for(int j = 0; j < 5; j++){
+      for(int k = 0; k < 64; k++){
+        while(layers[i][x] != '\0'){
+          layers[i][x] = c[j][i][k];
+          x++;
+        }
+        x++;
+      }
+    }
+  }
+}
+int main(){
+  printf("hello world");
+   init();
+   nameline();
+   /*name the char array */
+     for(int i = 0; i < 5; i++){
+       for(int j = 0; j < 64; j++){
+         printf("%c", layers[i][j]);
+       }
+     printf("\n");
+    }
+    return 0;
+  }
