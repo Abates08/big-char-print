@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "ANSI-color-codes.h"
-#include "better-rand.h"
+int randx, randy;
+randx = 10;
+randy = 10;
 int tajmahal[15][15] = {
 {3,3,3,3,3,3,3,3,3,3,3,3,3,3,3},
 {3,0,0,0,0,0,0,0,0,0,0,0,0,0,3},
@@ -24,8 +26,8 @@ int main(){
     while (init)
     {
         int randx, randy;
-        randx = rando(0,15);
-        randy = rando(0,15);
+        randx = 10;
+        randy = 10;
     prizepos[randx][randy] = 1;
     printf("\n\n"REDB);
     for(int i = 0; i < 15; i++){
@@ -37,7 +39,7 @@ int main(){
                 printf(WHTB"  "REDB);
             } else if(tajmahal[i][j] == 0){
                 printf(REDB"  ");
-            } else{}}
+            }}
         }
         printf(reset"\n"REDB);
     }
